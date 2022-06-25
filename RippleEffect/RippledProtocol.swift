@@ -57,7 +57,7 @@ class RippleLayer: CALayer {
     
     private var circleLayer: CAShapeLayer?
     
-    func setRippleAt(_ point: CGPoint) {
+    fileprivate func setRippleAt(_ point: CGPoint) {
         self.circleLayer?.removeFromSuperlayer()
         
         let radius = radiusForRippleCircle(point)
